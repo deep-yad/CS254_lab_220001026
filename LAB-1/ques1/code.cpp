@@ -20,7 +20,7 @@ int main(){
     int dataPoint;
     int maxi=INT_MIN;
     int seMaxi=INT_MIN;
-    while (inputFile >> dataPoint) {
+    while (inputFile >> dataPoint){
             if(dataPoint>=maxi){
                 seMaxi = maxi;
                 maxi=dataPoint;
