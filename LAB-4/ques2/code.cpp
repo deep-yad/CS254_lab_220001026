@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int getMedian(vector<int>& ar1,vector<int>& ar2, int n, int m)
-{
+int getMedian(vector<int>& ar1,vector<int>& ar2, int n, int m){
 	int i = 0; 
 	int j = 0; 
 	int count;

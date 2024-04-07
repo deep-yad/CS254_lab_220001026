@@ -38,5 +38,3 @@ int main(){
     cout << "Total value: " << totalValue << endl;
     return 0;
 }
-
-// T.C. - O(n.log(n))

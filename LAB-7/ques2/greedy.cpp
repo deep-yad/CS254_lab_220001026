@@ -10,16 +10,18 @@ bool comparison(Job a, Job b) {
     return (a.profit > b.profit);
 }
 
-void findMaxProfit(std::vector<Job>& jobs, int n) {
+void findMaxProfit(vector<Job>& jobs, int n) {
     sort(jobs.begin(), jobs.end(), comparison);
     int result[n];
     bool slot[n];
+    int ans=0;
     for (int i = 0; i < n; i++)
         slot[i] = false;
     for (int i = 0; i < n; i++) {
-        for (int j = std::min(n, jobs[i].deadline) - 1; j >= 0; j--) {
+        for (int j = jobs[i].deadline - 1; j >= 0; j--) {
             if (slot[j] == false) {
                 result[j] = i;
+                ans+=jobs[i].profit;
                 slot[j] = true;
                 break;
             }
@@ -27,7 +29,9 @@ void findMaxProfit(std::vector<Job>& jobs, int n) {
     }
     for (int i = 0; i < n; i++)
         if (slot[i])
-            std::cout << jobs[result[i]].id << ' ';
+            cout << jobs[result[i]].id << ' ';
+
+    cout<<"The max profit is : "<<ans<<endl;
 }
 
 int main() {
@@ -37,5 +41,3 @@ int main() {
     return 0;
 }
 
-
-// T.C. - O(n.log(n))

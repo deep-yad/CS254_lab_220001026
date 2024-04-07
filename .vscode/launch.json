@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/yadav/OneDrive/Desktop/cs254lab/cs254__220001026/LAB-5/ques3",
-      "program": "c:/Users/yadav/OneDrive/Desktop/cs254lab/cs254__220001026/LAB-5/ques3/build/Debug/outDebug",
+      "cwd": "c:/Users/yadav/OneDrive/Desktop/cs254lab/cs254__220001026/LAB-7/ques2",
+      "program": "c:/Users/yadav/OneDrive/Desktop/cs254lab/cs254__220001026/LAB-7/ques2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
